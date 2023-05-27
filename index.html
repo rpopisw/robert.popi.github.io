@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Presentación</title>
+    <!-- Enlace al archivo CSS de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header class="bg-gray-900 text-white fixed w-full top-0">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="#" class="text-lg font-bold">Nombre del Ingeniero de Software</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#bienvenida">Bienvenida</a></li>
+                    <li><a href="#trabajos">Trabajos Elaborados</a></li>
+                    <li><a href="#presentaciones">Presentaciones</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto">Contáctame</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Resto del contenido de la página -->
+    <section id="bienvenida" class="bienvenida">
+        <div class="container">
+          <h2 class="section-title">Bienvenida</h2>
+          <p class="section-description">¡Bienvenido a mi página de presentación! Soy un ingeniero de software con experiencia en el desarrollo de aplicaciones web y móviles. Aquí podrás conocer más sobre mi trabajo, mis proyectos y mi experiencia profesional.</p>
+        </div>
+      </section>
+      
+      <section id="trabajos" class="trabajos">
+        <div class="container">
+          <h2 class="section-title">Trabajos Elaborados</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="./contenedor-logo-colores.png" alt="Trabajo 1">
+              <div class="card-content">
+                <h3 class="card-title">Aspat </h3>
+                <p class="card-description">ASPAT nace como respuesta a la preocupación que suscitó en Perú un tema tan estigmatizado como la tuberculosis. Bajo la experiencia personal de nuestros fundadores, Melecio Mayta Ccota y Juan León Palomino, en el año 2005 se crea la Asociación de Personas Afectadas por Tuberculosis. Dos años después (2007), mutamos al nombre de ASPAT PERÚ, constituyéndonos como una organización con el propósito de salvar vidas y aliviar el sufrimiento de aquellas personas que padecen de esta enfermedad.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images.png" alt="Trabajo 2">
+              <div class="card-content">
+                <h3 class="card-title">Juice Market</h3>
+                <p class="card-description">Ofrecemos productos altamente nutritivos, ricos y que sean fáciles de incorporar en el estilo de vida de cada uno. Implementamos tecnología que nos asegura la extracción perfecta del insumo para así aprovechar todos sus componentes nutritivos. .</p>
+              </div>
+            </div>
+            <!-- Agrega más tarjetas de trabajo según sea necesario -->
+          </div>
+        </div>
+      </section>
+      <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+          <h2 class="section-title">Sobre Mí</h2>
+          <div class="about-me">
+            <img src="./perfil.jpeg" alt="Foto de Perfil">
+            <div class="about-me-content">
+              <h3 class="about-me-title">¡Hola, soy Robert Popi Requis!</h3>
+              <p class="about-me-description">Soy un ingeniero de software apasionado por la creación de soluciones innovadoras. Con una sólida experiencia en el desarrollo de aplicaciones web y móviles, me encanta trabajar en proyectos desafiantes y aprender nuevas tecnologías.</p>
+              <p class="about-me-description">Mi objetivo es utilizar mis habilidades técnicas y creativas para ofrecer soluciones eficientes y de alta calidad que satisfagan las necesidades de los clientes. Estoy constantemente actualizando mis conocimientos y explorando nuevas formas de mejorar mi trabajo.</p>
+              
+              <div class="social-media">
+                <a href="#" class="social-media-link">https://www.linkedin.com/in/robertpopi/<i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-media-link">https://github.com/rpopisw<i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contacto" class="contacto">
+        <div class="container">
+          <h2 class="section-title">Contáctame</h2>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+               
+
+    <!-- Tu archivo JavaScript personalizado -->
+    <script src="https://kit.fontawesome.com/dcff8785c0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
